@@ -114,11 +114,11 @@ return array(
 	// using Yii::app()->params['paramName']
 	'params'=>array(
 		// this is used in contact page
-		'adminEmail'=>'webmaster@example.com',
-		'appkey' => '21352824',
-		'secretkey' => '6165ac00af5e9fe95150c04f3fd8629b',
-		'pid' => '34483966',
-		'nick' => '至又无言去不闻',
+		'adminEmail'=>'wgmone@1636.com',
+		'appkey' => '123',
+		'secretkey' => '123',
+		'pid' => '123',
+		'nick' => '123',
 		//pid , nick 二选一
 	),
 );
