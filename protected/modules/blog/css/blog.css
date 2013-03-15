@@ -1,0 +1,58 @@
+body,img,form,select{
+	padding:0px;
+	margin:0px;
+}
+.form{
+	width:500px;
+	margin-left:20px;
+	margin-top:20px;
+}
+select,input,textarea{
+	border-radius:0px !important;
+}
+.blog_content{
+	width:300px;
+	height:80px;
+}
+.form label{
+	font-weight:bold;
+	color:#0A9BF4;
+	margin-top:5px;
+}
+.classpage{
+	width:100%;
+}
+.classadd{
+	margin-left:40px;
+	width:300px;
+	float:left;
+}
+.classadd h4,.classlist h4{
+	color:#0A9BF4;
+}
+.classadd .classfid{
+	width:160px;
+	margin-top:5px;
+}
+.classname{
+	margin-top:5px;
+	width:150px;
+}
+.classlist{
+	width:500px;
+	float:left;
+}
+.classlist table{
+	width:300px;
+}
+#red{
+	padding-top:20px;
+}
+.grid-view table.items th {
+	background: none;
+	text-align: center;
+	background-color:#5AB275;
+}
+.btn-success{
+	margin-top:10px;
+}

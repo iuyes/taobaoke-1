@@ -1,0 +1,74 @@
+body,img,h3,table{
+	margin:0px;
+	padding:0px;
+}
+input,textarea{
+	border-radius: 0px !important;
+}
+.goodslist td
+	{
+	min-width:100px;
+	word-break:break-all;
+	text-align:center;
+	border:1px solid;
+	border-color: #CACACA;
+	
+}
+
+.table_title{
+	background-color: #5AB275;
+		color:white;
+}
+form{
+	padding-top:20px;
+	margin-left:80px;
+
+}
+.form_addclass{
+	padding-top:20px;
+}
+.form_addclass .row label{
+	color:gray;
+}
+.grid-view table.items th{
+	background-image:none;
+	background-color:#5AB275;
+}
+.submit{
+	margin-top:10px;
+}
+.storage_table{
+	width:250px;
+}
+.row{
+	margin-top:5px;
+}
+.label-warning{
+	cursor:pointer;
+}
+
+/*search goods*/
+.searchgoods{
+	width:auto;
+}
+.form_searchgoods{
+	width:350px;
+	float:left;
+}
+.result_searchgoods{
+	width:70%;
+	float:left;
+	
+}
+.searchpic img{
+	width:200px;
+}
+.result_searchgoods .del{
+	cursor:pointer;
+}
+.allgoods img{
+	width:200px;
+}
+.allgoods .del{
+	cursor:pointer;
+}

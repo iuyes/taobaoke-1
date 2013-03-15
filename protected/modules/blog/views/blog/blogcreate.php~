@@ -1,0 +1,30 @@
+<div class="form">
+<?php echo CHtml::beginForm();?>
+	
+	<?php echo CHtml::errorSummary($model);?>
+
+	<div class="row">
+		<label>分类</label>
+		<select name='BlogTableModel[Cid]'>	
+			<?php
+				foreach($class as $val){
+					echo '<option value='.$val['Cid'].'>'.$val['ClassName'].'</option>';
+				}
+			?>
+		</select>
+	</div>
+
+	<div class="row">
+		<?php echo CHtml::activeLabel($model,'Title'); ?>
+		<input type="text" name="BlogTableModel[Title]"/>
+	</div>
+
+	<div class="row">
+		<?php echo CHtml::activeLabel($model,'Content'); ?>
+		<textarea name="BlogTableModel[Content]" class="blog_content"></textarea>
+	</div>
+	<div class="row submit">
+        <input type="submit" class="btn btn-success" />
+	</div>
+<?php echo CHtml::endForm();?>	
+</div>

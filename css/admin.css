@@ -1,0 +1,85 @@
+body,img,header{
+	margin:0px;
+	padding:0px;
+	color:#2295AB;
+}
+header{
+	background-color: #333333;
+	display: block;
+	height: 68px;
+	font-weight:bold;
+	font-size: 18px;
+	min-width: 955px;
+	padding: 14px 25px 0 25px;
+}
+.headtitle{
+	
+}
+.headtitle span{
+	display:block;
+}
+.shorttitle{font-size:14px;margin-top:15px;}
+.applicationlist{
+	position:absolute;
+	right:50px;
+	top:10px;
+}
+#ne {
+	position:absolute;
+	right:50px;
+	top:48px;
+	font-size:13px
+}
+#ne li{
+	list-style:none;
+	float:left;
+	margin-left:5px;
+}
+#ne li a{
+	color:white;
+	text-decoration:none;
+}
+.application-title{font-size:13px;color:white;}
+/*head end */
+#container{
+	margin-top:5px;
+}
+#sidebar{
+	width:12%;
+	min-width:165px;
+	float:left;
+	background-color:#F3F3F3;
+	height:900px;
+	border-bottom:1px dashed #00BAFF;
+}
+
+#mainshow{
+	width:86%;
+	float:right;
+	background-color:#f3f3f3;
+	height:900px;
+	border-bottom:1px dashed #00BAFF;
+}
+
+.clear{
+	clear:both;
+}
+.sidetitle{
+	text-align:center;
+}
+.sidemenu li{
+	text-align:left;
+	line-height:25px;
+	cursor:pointer;
+}
+.sidemenu{
+	display:none;
+}
+.taobaomenu{
+	
+}
+.taobaomenu li{
+	text-align:left;
+	line-height:25px;
+	cursor:pointer;
+}
