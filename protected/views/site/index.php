@@ -1,26 +1,21 @@
-<?php
-/* @var $this SiteController */
-
-$this->pageTitle=Yii::app()->name;
-?>
-
-<h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
-
-<p>Congratulations! You have successfully created your Yii application.</p>
-
-<p>You may change the content of this page by modifying the following two files:</p>
-<ul>
-	<li>View file: <code><?php echo __FILE__; ?></code></li>
-	<li>Layout file: <code><?php echo $this->getLayoutFile('main'); ?></code></li>
-</ul>
-
-<p>For more details on how to further develop this application, please read
-the <a href="http://www.yiiframework.com/doc/">documentation</a>.
-Feel free to ask in the <a href="http://www.yiiframework.com/forum/">forum</a>,
-should you have any questions.</p>
-<?php
-if (SRUser::checkAccess('deletepost')) {
-	// The user is assigned the 'admin' authorization item (in this case, 'admin' is a role).
-	//     // Do something that the adminsitrator can do.
-   }
-?>
+<html ng-app="goodscat">
+	<head>
+		<title>爱自己</title>
+		<meta charset="utf-8">
+		<link href="/css/bootstrap.css" media="all" rel="stylesheet" type="text/css" />
+		<link href="/css/master.css" media="all" rel="stylesheet" type="text/css" />
+		<script type="text/javascript"	src="/js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript"  src="/js/angular.min.js"></script>
+		<script type="text/javascript"  src="/js/angular-cookies-1.0.0rc10.js"></script>
+		<script type="text/javascript"	src="/js/app.js"></script>
+		<script type="text/javascript"	src="/js/controller.js"></script>
+	</head>
+		
+	<body>
+		<div ng-view>
+			
+		</div>
+	</body>
+		<script type="text/javascript"  src="/js/jquery.masonry.min.js"></script>
+		<script type="text/javascript"  src="/js/main.js"></script>
+</html>

@@ -1,0 +1,10 @@
+<div class="container-fluid">
+	<!--Body content-->
+	<ul class="goods" id="container"> 
+		<li ng-repeat="item in goods" class="item" add-masonry>
+		<a href="#/phones/{{item.gid}}" class="thumb"><img ng-src="{{item.pic_url}}"></a>
+		<a href="#/phones/{{item.gid}}" class="title">{{item.title}}</a>
+		<p class="description">{{item.nick}}</p>
+		</li>
+	</ul>
+</div>
