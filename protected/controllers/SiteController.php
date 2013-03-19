@@ -26,12 +26,32 @@ class SiteController extends Controller
 	 * This is the default 'index' action that is invoked
 	 * when an action is not explicitly requested by users.
 	 */
-	public function actionIndex()
+	public function actionIndex($cid=null)
 	{
 		$this->layout = 'angular';
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
-		$this->render('index');
+		$querystring ="";
+
+		if(!is_null($cid)){
+			$querystring .= 'and Cid='.$classid;
+		}
+
+		$allgoods = Yii::app()->db->createcommand("select * from `Taobao_goods` where 1=1 ".$querystring)
+			->queryAll();
+
+		$goodsarr = array(); 
+		foreach($allgoods as $row){
+			$gid = $row['Gid'];
+			$cid = $row['Cid'];
+			$goods = json_decode($row['Goods'],true);
+			//$goodsarr[] = array('gid'=>$gid,'cid'=>$cid,'goods'=>$goods);
+			$goods['gid'] = $gid;
+			$goods['cid'] = $cid;
+			$goodsarr[] = $goods;
+		}   
+
+		$this->render('index',array('goods'=>$goodsarr));
 	}
 
 	/**

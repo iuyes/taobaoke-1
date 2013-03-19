@@ -1,0 +1,46 @@
+body,img,ul,li{
+	margin:0px;
+	padding:0px;
+}
+body{
+	background-color:#E6E6E6;
+}
+#main{
+	width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#container .item{
+	display:block;
+	width:240px;
+	float:left;
+	padding:5px;
+	background-color:white;
+}
+
+#container .title{
+	padding-top:5px;
+	padding-bottom:5px;
+	display:block;
+}
+
+#container .item img{
+	width:230px;
+}
+
+#container a{
+	color:#898989;
+}
+
+#navigate{
+	margin-top:10px;
+	background:white;
+	height:60px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.red{
+	background-color:#FF0000;
+	height:10px;
+}
