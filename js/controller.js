@@ -8,13 +8,10 @@ function PhoneListCtrl($scope, $http) {
 			obj.cid = value.cid;
 			$scope.goods.push(obj);
 		});
-		$scope.goodsnum  = $scope.goods.length;
 	});
 	  $scope.container = $('#container');
 	  $scope.container.imagesLoaded(function() {
 		  $scope.container.masonry({
-			  singleMode      : true,
-			  columnWidth     : 240,
 			  itemSelector    : '.item',
 			});
 	  });

@@ -10,10 +10,12 @@ angular.module('goodscat', ['ngCookies']).
 .directive('addMasonry', function($timeout) {
   return {
     restrict: 'A',
-    link: function(scope, element) {	
+    link: function(scope, element) {
 		if (scope.$last){
-       		//scope.container.masonry('reload');
-    	}
+			  element.ready(function () {
+       			scope.container.masonry('reload');
+    		  })
+		}
     }
   };
 })

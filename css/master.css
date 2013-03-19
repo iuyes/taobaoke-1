@@ -10,12 +10,10 @@
 .container-fluid 
 .container-fluid .item a img{
 	width:205px;
-	height:205px !important;
 }
 .container-fluid .item {
 	display:block;
 	width:205px;
-	height:320px;
 	margin:0px 10px 0px 10px;
 	float: left;
 }
